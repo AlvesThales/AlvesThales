@@ -1,0 +1,174 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'Fjalla';
+	src: url("../fonts/Fjalla_One/FjallaOne-Regular.ttf");
+	font-size: 1em;
+}
+.header-container {
+	/*border: solid 3px;*/
+	text-align: right;
+	position:relative;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+}
+header #mask {
+		/*position: fixed;*/
+		position: absolute;
+		background-color: rgba(0,0,0,.1);
+		width: 2000px;
+	    height: 2000px;
+	    top: -670px;
+	    right: 893px;
+	    z-index: -4;
+	    transform: rotate(30deg);
+}
+.header-container ul {
+	position:relative;
+	list-style-type: none;
+	color: #fff;
+	font-family: OpenSans;
+	font-size: 20px;
+}
+.header-container li {
+	display: inline-block;
+}
+.header-container li a {
+	top: 20px;
+	position:relative;
+	font-weight: 800;
+    font-size: 15px;
+    padding: 93px 25px 40px;
+}
+.header-container ul a {
+	color: #fff;
+	text-decoration: none;
+}
+#background {
+	top: 0;
+	left: 0;
+	margin: 0 0;
+	padding: 0 0;
+	min-width: 100%;
+	min-height: 100%;
+	position: fixed;
+	background-image: url("../img/bg1.jpg");
+	background-size: cover;
+	z-index: -100;
+}
+#row-main {
+	position: relative;
+	height: 100;
+	padding: 150px 0 300px;
+}
+#row-main .container {
+	padding: 0;
+	text-align: center;
+    width: 100%;
+}
+#row-main .container h1 {
+	color:rgba(255,255,255,.7);
+	font-family: Fjalla;
+	font-weight: lighter;
+	font-size: 40px;
+	margin: 0;
+}
+#row-main .container h2 {
+	color:rgba(255,255,255,.4);
+	font-family: Fjalla;
+	font-weight: lighter;
+	font-size: 20px;
+	margin: 0;
+}
+#projects {
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    transition: 0.4s;
+}
+#projects .row {
+	margin: 0 0;
+	background: #fff;
+    height: 100%;
+}
+#projects .row .container {
+	margin: 0 0;
+	padding: 0px 30px;
+    text-align: center;
+    max-width: 100%;
+}
+#projects h1 {
+	color: #000;
+	font-family: Fjalla;
+	font-size: 40px;
+	margin: 0;
+}
+#projects h2 {
+	color: #666;
+	font-family: OpenSans;
+	font-size: 15px;
+	margin: 0;
+}
+#projects #logotipo {
+	width: 50%;
+}
+#projects .row .container-logo {
+    text-align: center;
+    width: 100%;
+}
+#projects .row .container-logo-jogos {
+    text-align: center;
+    margin: 15px;
+}
+.separador {
+	margin: 0 auto;
+    background: url(../img/separador.png);
+    height: 9px;
+    width: 576px;
+}
+.portfolio-item {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 45px 21px 66px;
+}
+ ul, ol, li {
+ 	list-style: none;
+ }
+ #projects li {
+ 	padding : 0 50px;
+ }
+ #projects li h1 {
+ 	font-size: 25px;
+ }
+  .itemjogo {
+  	position: relative;
+  	display: inline-block;
+}
+#jogologo {
+	width: 320px;
+}
+a {
+	text-decoration: none;
+	transition: 0.2s;
+}
+a {
+	color: black;
+}
+a:hover {
+	color: #0066ff;
+}
+.active {
+    border-bottom: 4px solid #0066ff;
+}
