@@ -13,20 +13,39 @@
 	src: url("../fonts/Fjalla_One/FjallaOne-Regular.ttf");
 	font-size: 1em;
 }
-.header-container {
-	/*border: solid 3px;*/
-	text-align: right;
-	position:relative;
-    height: 90px;
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+}
+
+.header-container {
+	width: 100%;
+	text-align: right;
+	position:relative;
+    height: 40px;
+    margin: 0 0;
+    padding: 0 150px;
+    background-color: rgba(0,0,0,0.5);
+}
+.header-container a{
+	color: #fff;
+	text-decoration: none;
+}
+.header-container a:hover {
+	color: #666;
+}
+.header-container i {
+	font-size: 30px;
+	margin: 5px 10px;
 }
 header #mask {
-		/*position: fixed;*/
 		position: absolute;
 		background-color: rgba(0,0,0,.1);
 		width: 2000px;
-	    height: 2000px;
+	    height: 1900px;
 	    top: -670px;
 	    right: 893px;
 	    z-index: -4;
@@ -42,24 +61,20 @@ header #mask {
 .header-container li {
 	display: inline-block;
 }
-.header-container li a {
-	top: 20px;
-	position:relative;
-	font-weight: 800;
-    font-size: 15px;
-    padding: 93px 25px 40px;
-}
-.header-container ul a {
+.header-container a {
 	color: #fff;
 	text-decoration: none;
+}
+.header-container a:hover {
+	color: #666;
 }
 #background {
 	top: 0;
 	left: 0;
-	margin: 0 0;
-	padding: 0 0;
-	min-width: 100%;
-	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 	position: fixed;
 	background-image: url("../img/bg1.jpg");
 	background-size: cover;
@@ -70,13 +85,14 @@ header #mask {
 	height: 100;
 	padding: 150px 0 300px;
 }
-#row-main .container {
-	padding: 0;
+.container {
 	text-align: center;
-    width: 100%;
+    margin: 0 200px;
+	padding: 0px 0px;
+    max-width: 100%;
 }
 #row-main .container h1 {
-	color:rgba(255,255,255,.7);
+	color:white;
 	font-family: Fjalla;
 	font-weight: lighter;
 	font-size: 40px;
@@ -102,12 +118,6 @@ header #mask {
 	background: #fff;
     height: 100%;
 }
-#projects .row .container {
-	margin: 0 0;
-	padding: 0px 30px;
-    text-align: center;
-    max-width: 100%;
-}
 #projects h1 {
 	color: #000;
 	font-family: Fjalla;
@@ -120,16 +130,27 @@ header #mask {
 	font-size: 15px;
 	margin: 0;
 }
-#projects #logotipo {
-	width: 50%;
-}
 #projects .row .container-logo {
-    text-align: center;
-    width: 100%;
+	width: 40%;
+	display: inline-block;
+
+}
+#projects .row .container-mobile {
+	margin: 10px 50px 0;
+	width: 11%;
+	display: inline-block;
+
 }
 #projects .row .container-logo-jogos {
     text-align: center;
     margin: 15px;
+}
+#projects .row .container-description {
+    text-align: left;
+    padding: 0 0px;
+    float: right;
+    display: inline-block;
+    width: 310px;
 }
 .separador {
 	margin: 0 auto;
@@ -143,14 +164,12 @@ header #mask {
 	border-bottom: 1px solid #e0e0e0;
 	padding: 45px 21px 66px;
 }
+.portfolio-item img {
+	width: 100%;
+}
  ul, ol, li {
+ 	padding: 0;
  	list-style: none;
- }
- #projects li {
- 	padding : 0 50px;
- }
- #projects li h1 {
- 	font-size: 25px;
  }
   .itemjogo {
   	position: relative;
@@ -171,4 +190,37 @@ a:hover {
 }
 .active {
     border-bottom: 4px solid #0066ff;
+}
+
+element.style {
+}
+.skills li {
+	font-family: 'Opensans'; 
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    line-height: 32px;
+    display: inline;
+    border-radius: 4px;
+    font-size: 12px;
+    background: #0066ff;
+    padding: 4px 9px;
+}
+.wrapper-footer {
+	margin: 0;
+	width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.hub {
+	margin: 0 auto;
+}
+.hub a {
+	color: #fff;
+	text-decoration: none;
+}
+.hub a:hover {
+	color: #666;
+}
+.hub i {
+	font-size: 35px;
+	margin: 10px;
 }
