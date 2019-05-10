@@ -191,8 +191,8 @@ a:hover {
 .active {
     border-bottom: 4px solid #0066ff;
 }
-
-element.style {
+.skills {
+	margin-top:10px;
 }
 .skills li {
 	font-family: 'Opensans'; 
