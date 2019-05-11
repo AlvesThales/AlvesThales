@@ -18,15 +18,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+
 
 .header-container {
 	width: 100%;
 	text-align: right;
 	position:relative;
     height: 40px;
-    margin: 0 0;
     padding: 0 150px;
     background-color: rgba(0,0,0,0.5);
 }
@@ -41,17 +51,17 @@
 	font-size: 30px;
 	margin: 5px 10px;
 }
-header #mask {
-		position: absolute;
-		background-color: rgba(0,0,0,.1);
-		width: 2000px;
-	    height: 1900px;
-	    top: -670px;
-	    right: 893px;
-	    z-index: -4;
-	    transform: rotate(30deg);
+#mask {
+	position: absolute;
+	background-color: rgba(0,0,0,.1);
+	width: 2000px;
+	height: 1900px;
+	top: -670px;
+	right: 893px;
+	z-index: -4;
+	transform: rotate(30deg);
 }
-.header-container ul {
+.menu-header {
 	position:relative;
 	list-style-type: none;
 	color: #fff;
@@ -71,7 +81,6 @@ header #mask {
 #background {
 	top: 0;
 	left: 0;
-	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
@@ -82,7 +91,6 @@ header #mask {
 }
 #row-main {
 	position: relative;
-	height: 100;
 	padding: 150px 0 300px;
 }
 .container {
@@ -91,30 +99,22 @@ header #mask {
 	padding: 0px 0px;
     max-width: 100%;
 }
-#row-main .container h1 {
+#row-main h1 {
 	color:white;
 	font-family: Fjalla;
 	font-weight: lighter;
 	font-size: 40px;
-	margin: 0;
 }
 #row-main .container h2 {
 	color:rgba(255,255,255,.4);
 	font-family: Fjalla;
 	font-weight: lighter;
 	font-size: 20px;
-	margin: 0;
 }
 #projects {
-	margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-    transition: 0.4s;
+    transition: 1s;
 }
 #projects .row {
-	margin: 0 0;
 	background: #fff;
     height: 100%;
 }
@@ -122,30 +122,28 @@ header #mask {
 	color: #000;
 	font-family: Fjalla;
 	font-size: 40px;
-	margin: 0;
 }
 #projects h2 {
 	color: #666;
 	font-family: OpenSans;
 	font-size: 15px;
-	margin: 0;
 }
-#projects .row .container-logo {
+.container-logo {
 	width: 40%;
 	display: inline-block;
 
 }
-#projects .row .container-mobile {
+.container-mobile {
 	margin: 10px 50px 0;
 	width: 11%;
 	display: inline-block;
 
 }
-#projects .row .container-logo-jogos {
+.container-logo-jogos {
     text-align: center;
     margin: 15px;
 }
-#projects .row .container-description {
+.container-description {
     text-align: left;
     padding: 0 0px;
     float: right;
@@ -206,7 +204,6 @@ a:hover {
     padding: 4px 9px;
 }
 .wrapper-footer {
-	margin: 0;
 	width: 100%;
     background-color: rgba(0,0,0,0.5);
 }
@@ -223,4 +220,59 @@ a:hover {
 .hub i {
 	font-size: 35px;
 	margin: 10px;
+}
+
+
+     /*MOBILE*/
+
+@media only screen and (max-width: 470px) {
+
+	.container {
+		margin: 0 20px;
+	}
+	.header-container {
+		padding: 0 0;
+	}
+
+	.separador {
+		display: none;
+	}
+	.portfolio-item {
+		padding: 45px 0;
+	}
+	.menu-header {
+		display: inline-block;
+	}
+	.container-description {
+		margin-top: 20px;
+		text-align: center;
+		float: none;
+	}
+	.container-mobile {
+		margin: 0 10px;
+	}
+	#row-main {
+    padding: 150px 0 167px;
+	}
+	#mask {
+	height: 690px;
+	top: -670px;
+	right: 15px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	#projects h1 {
+	font-size: 30px;
+	}
+	ul {
+		display:inline-block;
+	}
+	.portfolio-item {
+		margin-left: -15px;
+	}
+
+
+
 }
